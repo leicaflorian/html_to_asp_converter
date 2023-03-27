@@ -1,0 +1,29 @@
+@use "bootstrap";
+
+#app {
+  
+  .container-fluid {
+    display:        flex;
+    flex-direction: column;
+    height:         100vh;
+    
+    & > .nav {
+      flex-shrink: 0;
+    }
+    
+    & > .row {
+      flex: 1;
+    }
+  }
+}
+
+.left-col, .right-col {
+  padding:        1rem 0 2rem 0;
+  height:         100%;
+  display:        flex;
+  flex-direction: column;
+  
+  textarea {
+    flex: 1;
+  }
+}
